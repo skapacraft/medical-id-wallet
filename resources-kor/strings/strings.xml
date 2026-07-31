@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+  <string id="appName">Medical ID Wallet</string>
+
+  <string id="firstName">이름</string>
+  <string id="lastName">성</string>
+  <string id="bloodType">혈액형</string>
+  <string id="bloodNotSet">미설정</string>
+  <string id="notFilled">미입력</string>
+  <string id="iceContact1">비상연락처 1</string>
+  <string id="iceContact2">비상연락처 2</string>
+  <string id="iceContact1Name">비상연락처1 이름</string>
+  <string id="iceContact1Rel">비상연락처1 관계</string>
+  <string id="iceContact2Name">비상연락처2 이름</string>
+  <string id="iceContact2Rel">비상연락처2 관계</string>
+  <string id="height">키</string>
+  <string id="weight">체중</string>
+  <string id="unitSystem">단위 체계</string>
+  <string id="unitMetric">미터법 (cm, kg)</string>
+  <string id="unitImperial">야드파운드법 (in, lb)</string>
+  <string id="medications">복용약</string>
+  <string id="allergies">알레르기</string>
+  <string id="conditions">병력</string>
+  <string id="dateOfBirth">생년월일 (YYYY-MM-DD)</string>
+  <string id="ageLabel">나이:</string>
+  <string id="donorStatus">장기 기증자</string>
+  <string id="donorNotSpecified">지정되지 않음</string>
+  <string id="donorYes">예</string>
+  <string id="donorNo">아니오</string>
+  <string id="nationalId">주민등록번호 / 건강보험카드</string>
+  <string id="docString">대체 코드 — 바코드/QR의 ID를 대체함 (예: 보험 번호, 경기 번호, 프로필 URL)</string>
+  <string id="docLabel">코드 라벨 (예: 배번호, 보험)</string>
+  <string id="barcodeTooLongQr">QR에 비해 코드가 너무 김</string>
+
+  <string id="bloodTypeLabel">혈액형:</string>
+  <string id="dateOfBirthLabel">생년월일:</string>
+  <string id="donorStatusLabel">장기 기증자:</string>
+  <string id="nationalIdLabel">주민번호:</string>
+  <string id="contactsLabel">비상연락처:</string>
+  <string id="medicationsLabel">복용약:</string>
+  <string id="allergiesLabel">알레르기:</string>
+  <string id="conditionsLabel">병력:</string>
+  <string id="noData">데이터 미설정</string>
+  <string id="openConnectMobile">Garmin Connect Mobile를 열어</string>
+  <string id="setupProfileHint">프로필을 설정하세요.</string>
+  <string id="minimumFieldsHint">이름과 혈액형부터 시작하세요</string>
+
+  <string id="docType">바코드 형식</string>
+  <string id="docTypeNone">없음 / 텍스트만</string>
+  <string id="docTypeQR">의료보험 / 디지털 건강 QR</string>
+  <string id="docTypeGeneric">Code 39 (짧은 코드만)</string>
+  <string id="barcodeTooLong">바코드에 너무 김 - QR 사용</string>
+  <string id="appInfoLabel">앱 정보</string>
+</strings>

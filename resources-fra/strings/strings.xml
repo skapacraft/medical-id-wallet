@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+  <string id="appName">Medical ID Wallet</string>
+
+  <string id="firstName">Prénom</string>
+  <string id="lastName">Nom de Famille</string>
+  <string id="bloodType">Groupe Sanguin</string>
+  <string id="bloodNotSet">Non défini</string>
+  <string id="notFilled">Non renseigné</string>
+  <string id="iceContact1">Contact d&apos;Urgence 1</string>
+  <string id="iceContact2">Contact d&apos;Urgence 2</string>
+  <string id="iceContact1Name">Nom contact 1</string>
+  <string id="iceContact1Rel">Lien contact 1</string>
+  <string id="iceContact2Name">Nom contact 2</string>
+  <string id="iceContact2Rel">Lien contact 2</string>
+  <string id="height">Taille</string>
+  <string id="weight">Poids</string>
+  <string id="unitSystem">Système d'unités</string>
+  <string id="unitMetric">Métrique (cm, kg)</string>
+  <string id="unitImperial">Impérial (in, lb)</string>
+  <string id="medications">Médicaments</string>
+  <string id="allergies">Allergies</string>
+  <string id="conditions">Pathologies</string>
+  <string id="dateOfBirth">Date de naissance (YYYY-MM-DD)</string>
+  <string id="ageLabel">ÂGE:</string>
+  <string id="donorStatus">Donneur d'organes</string>
+  <string id="donorNotSpecified">Non spécifié</string>
+  <string id="donorYes">Oui</string>
+  <string id="donorNo">Non</string>
+  <string id="nationalId">N° Sécurité Sociale / Carte Vitale</string>
+  <string id="docString">Code alternatif — remplace l'ID national dans le code-barres/QR (ex. n° assurance, n° dossard, URL de profil)</string>
+  <string id="docLabel">Libellé du code (ex. Dossard, Assurance)</string>
+  <string id="barcodeTooLongQr">Code trop long pour le QR</string>
+
+  <string id="bloodTypeLabel">GROUPE SANGUIN:</string>
+  <string id="dateOfBirthLabel">DATE DE NAISSANCE:</string>
+  <string id="donorStatusLabel">DONNEUR D'ORGANES:</string>
+  <string id="nationalIdLabel">N° SÉCU:</string>
+  <string id="contactsLabel">CONTACTS D&apos;URGENCE:</string>
+  <string id="medicationsLabel">MÉDICAMENTS:</string>
+  <string id="allergiesLabel">ALLERGIES:</string>
+  <string id="conditionsLabel">PATHOLOGIES:</string>
+  <string id="noData">Aucune donnée configurée</string>
+  <string id="openConnectMobile">Ouvrez Garmin Connect Mobile</string>
+  <string id="setupProfileHint">pour configurer votre profil.</string>
+  <string id="minimumFieldsHint">Commencez par Nom + Groupe sanguin</string>
+
+  <string id="docType">Format Code-Barres</string>
+  <string id="docTypeNone">Aucun / Texte Uniquement</string>
+  <string id="docTypeQR">Assurance Maladie / QR Santé</string>
+  <string id="docTypeGeneric">Code 39 (codes courts uniquement)</string>
+  <string id="barcodeTooLong">Trop long pour les barres - QR</string>
+  <string id="appInfoLabel">À propos</string>
+</strings>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+  <string id="appName">Medical ID Wallet</string>
+
+  <string id="firstName">Etunimi</string>
+  <string id="lastName">Sukunimi</string>
+  <string id="bloodType">Veriryhmä</string>
+  <string id="bloodNotSet">Ei asetettu</string>
+  <string id="notFilled">Ei täytetty</string>
+  <string id="iceContact1">Hätäkontakti 1</string>
+  <string id="iceContact2">Hätäkontakti 2</string>
+  <string id="iceContact1Name">Yhteystieto 1 nimi</string>
+  <string id="iceContact1Rel">Yhteystieto 1 suhde</string>
+  <string id="iceContact2Name">Yhteystieto 2 nimi</string>
+  <string id="iceContact2Rel">Yhteystieto 2 suhde</string>
+  <string id="height">Pituus</string>
+  <string id="weight">Paino</string>
+  <string id="unitSystem">Mittayksikkö</string>
+  <string id="unitMetric">Metrinen (cm, kg)</string>
+  <string id="unitImperial">Imperiaalinen (in, lb)</string>
+  <string id="medications">Lääkkeet</string>
+  <string id="allergies">Allergiat</string>
+  <string id="conditions">Diagnoosit</string>
+  <string id="dateOfBirth">Syntymäaika (YYYY-MM-DD)</string>
+  <string id="ageLabel">IKÄ:</string>
+  <string id="donorStatus">Elintumoridonaattori</string>
+  <string id="donorNotSpecified">Ei määritetty</string>
+  <string id="donorYes">Kyllä</string>
+  <string id="donorNo">Ei</string>
+  <string id="nationalId">Henkilötunnus / Kela-kortti</string>
+  <string id="docString">Vaihtoehtoinen koodi — korvaa tunnuksen viivakoodissa/QR:ssa (esim. vakuutusnro, kilpailunro, profiilin URL)</string>
+  <string id="docLabel">Koodin nimike (esim. Kilpailunro, Vakuutus)</string>
+  <string id="barcodeTooLongQr">Koodi on liian pitkä QR-koodiin</string>
+
+  <string id="bloodTypeLabel">VERIRYHMÄ:</string>
+  <string id="dateOfBirthLabel">SYNTYMÄAIKA:</string>
+  <string id="donorStatusLabel">ELINLUOVUTTAJA:</string>
+  <string id="nationalIdLabel">HENKILÖTUNNUS:</string>
+  <string id="contactsLabel">HÄTÄKONTAKTIT:</string>
+  <string id="medicationsLabel">LÄÄKKEET:</string>
+  <string id="allergiesLabel">ALLERGIAT:</string>
+  <string id="conditionsLabel">DIAGNOOSIT:</string>
+  <string id="noData">Ei tietoja asetettu</string>
+  <string id="openConnectMobile">Avaa Garmin Connect Mobile</string>
+  <string id="setupProfileHint">asettaaksesi profiilisi.</string>
+  <string id="minimumFieldsHint">Aloita nimestä ja veriryhmästä</string>
+
+  <string id="docType">Viivakoodin muoto</string>
+  <string id="docTypeNone">Ei mitään / Vain teksti</string>
+  <string id="docTypeQR">Sairausvakuutus / Digitaalinen Terveys-QR</string>
+  <string id="docTypeGeneric">Code 39 (vain lyhyet koodit)</string>
+  <string id="barcodeTooLong">Liian pitkä viivoille - käytä QR</string>
+  <string id="appInfoLabel">Tietoja sovelluksesta</string>
+</strings>

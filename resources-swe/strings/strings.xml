@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+  <string id="appName">Medical ID Wallet</string>
+
+  <string id="firstName">Förnamn</string>
+  <string id="lastName">Efternamn</string>
+  <string id="bloodType">Blodgrupp</string>
+  <string id="bloodNotSet">Inte angivet</string>
+  <string id="notFilled">Inte ifyllt</string>
+  <string id="iceContact1">Nödkontakt 1</string>
+  <string id="iceContact2">Nödkontakt 2</string>
+  <string id="iceContact1Name">Kontakt 1 namn</string>
+  <string id="iceContact1Rel">Kontakt 1 relation</string>
+  <string id="iceContact2Name">Kontakt 2 namn</string>
+  <string id="iceContact2Rel">Kontakt 2 relation</string>
+  <string id="height">Längd</string>
+  <string id="weight">Vikt</string>
+  <string id="unitSystem">Måttenhet</string>
+  <string id="unitMetric">Metriskt (cm, kg)</string>
+  <string id="unitImperial">Imperialiskt (in, lb)</string>
+  <string id="medications">Läkemedel</string>
+  <string id="allergies">Allergier</string>
+  <string id="conditions">Diagnoser</string>
+  <string id="dateOfBirth">Födelsedatum (YYYY-MM-DD)</string>
+  <string id="ageLabel">ÅLDER:</string>
+  <string id="donorStatus">Organdonator</string>
+  <string id="donorNotSpecified">Inte angiven</string>
+  <string id="donorYes">Ja</string>
+  <string id="donorNo">Nej</string>
+  <string id="nationalId">Personnummer / Vårdkort</string>
+  <string id="docString">Alternativ kod — ersätter ID i streckkod/QR (t.ex. försäkringsnr, startnr, profil-URL)</string>
+  <string id="docLabel">Kodetikett (t.ex. Startnr., Försäkring)</string>
+  <string id="barcodeTooLongQr">Koden är för lång för QR</string>
+
+  <string id="bloodTypeLabel">BLODGRUPP:</string>
+  <string id="dateOfBirthLabel">FÖDELSEDATUM:</string>
+  <string id="donorStatusLabel">ORGANDONATOR:</string>
+  <string id="nationalIdLabel">PERSONNR.:</string>
+  <string id="contactsLabel">NÖDKONTAKTER:</string>
+  <string id="medicationsLabel">LÄKEMEDEL:</string>
+  <string id="allergiesLabel">ALLERGIER:</string>
+  <string id="conditionsLabel">DIAGNOSER:</string>
+  <string id="noData">Inga data konfigurerade</string>
+  <string id="openConnectMobile">Öppna Garmin Connect Mobile</string>
+  <string id="setupProfileHint">för att ställa in din profil.</string>
+  <string id="minimumFieldsHint">Börja med namn och blodgrupp</string>
+
+  <string id="docType">Streckkodformat</string>
+  <string id="docTypeNone">Inget / Endast Text</string>
+  <string id="docTypeQR">Sjukförsäkring / Digital Hälso-QR</string>
+  <string id="docTypeGeneric">Code 39 (endast korta koder)</string>
+  <string id="barcodeTooLong">För långt för streck - använd QR</string>
+  <string id="appInfoLabel">Om appen</string>
+</strings>

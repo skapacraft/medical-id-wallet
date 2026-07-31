@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+  <string id="appName">Medical ID Wallet</string>
+
+  <string id="firstName">Ad</string>
+  <string id="lastName">Soyad</string>
+  <string id="bloodType">Kan Grubu</string>
+  <string id="bloodNotSet">Belirtilmemiş</string>
+  <string id="notFilled">Doldurulmadı</string>
+  <string id="iceContact1">Acil Kişi 1</string>
+  <string id="iceContact2">Acil Kişi 2</string>
+  <string id="iceContact1Name">Kişi 1 Adı</string>
+  <string id="iceContact1Rel">Kişi 1 Yakınlık</string>
+  <string id="iceContact2Name">Kişi 2 Adı</string>
+  <string id="iceContact2Rel">Kişi 2 Yakınlık</string>
+  <string id="height">Boy</string>
+  <string id="weight">Kilo</string>
+  <string id="unitSystem">Birim Sistemi</string>
+  <string id="unitMetric">Metrik (cm, kg)</string>
+  <string id="unitImperial">İngiliz (in, lb)</string>
+  <string id="medications">İlaçlar</string>
+  <string id="allergies">Alerjiler</string>
+  <string id="conditions">Hastalıklar</string>
+  <string id="dateOfBirth">Doğum Tarihi (YYYY-MM-DD)</string>
+  <string id="ageLabel">YAŞ:</string>
+  <string id="donorStatus">Organ Bağışçısı</string>
+  <string id="donorNotSpecified">Belirtilmemiş</string>
+  <string id="donorYes">Evet</string>
+  <string id="donorNo">Hayır</string>
+  <string id="nationalId">TC Kimlik No / SGK No</string>
+  <string id="docString">Alternatif kod — barkod/QR'de kimliğin yerini alır (örn. sigorta no, yarış no, profil URL'si)</string>
+  <string id="docLabel">Kod Etiketi (ör. Yarış No, Sigorta)</string>
+  <string id="barcodeTooLongQr">Kod QR için çok uzun</string>
+
+  <string id="bloodTypeLabel">KAN GRUBU:</string>
+  <string id="dateOfBirthLabel">DOĞUM TARİHİ:</string>
+  <string id="donorStatusLabel">ORGAN BAĞIŞÇISI:</string>
+  <string id="nationalIdLabel">TC KİMLİK NO:</string>
+  <string id="contactsLabel">ACİL KONTAKT:</string>
+  <string id="medicationsLabel">İLAÇLAR:</string>
+  <string id="allergiesLabel">ALERJİLER:</string>
+  <string id="conditionsLabel">HASTALIKLAR:</string>
+  <string id="noData">Veri yapılandırılmamış</string>
+  <string id="openConnectMobile">Garmin Connect Mobile'ı aç</string>
+  <string id="setupProfileHint">profilini oluşturmak için.</string>
+  <string id="minimumFieldsHint">Ad + Kan Grubu ile başla</string>
+
+  <string id="docType">Barkod Biçimi</string>
+  <string id="docTypeNone">Yok / Sadece Metin</string>
+  <string id="docTypeQR">Sağlık Sigortası / Dijital Sağlık QR</string>
+  <string id="docTypeGeneric">Code 39 (yalnızca kısa kodlar)</string>
+  <string id="barcodeTooLong">Çubuklar için çok uzun - QR kullanın</string>
+  <string id="appInfoLabel">Uygulama Hakkında</string>
+</strings>

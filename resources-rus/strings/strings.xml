@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+  <string id="appName">Medical ID Wallet</string>
+
+  <string id="firstName">Имя</string>
+  <string id="lastName">Фамилия</string>
+  <string id="bloodType">Группа крови</string>
+  <string id="bloodNotSet">Не задано</string>
+  <string id="notFilled">Не заполнено</string>
+  <string id="iceContact1">Экстренный контакт 1</string>
+  <string id="iceContact2">Экстренный контакт 2</string>
+  <string id="iceContact1Name">Имя контакта 1</string>
+  <string id="iceContact1Rel">Отношение контакта 1</string>
+  <string id="iceContact2Name">Имя контакта 2</string>
+  <string id="iceContact2Rel">Отношение контакта 2</string>
+  <string id="height">Рост</string>
+  <string id="weight">Вес</string>
+  <string id="unitSystem">Система единиц</string>
+  <string id="unitMetric">Метрическая (см, кг)</string>
+  <string id="unitImperial">Имперская (дюймы, фунты)</string>
+  <string id="medications">Препараты</string>
+  <string id="allergies">Аллергии</string>
+  <string id="conditions">Заболевания</string>
+  <string id="dateOfBirth">Дата рождения (YYYY-MM-DD)</string>
+  <string id="ageLabel">ВОЗРАСТ:</string>
+  <string id="donorStatus">Донор органов</string>
+  <string id="donorNotSpecified">Не указано</string>
+  <string id="donorYes">Да</string>
+  <string id="donorNo">Нет</string>
+  <string id="nationalId">СНИЛС / Полис ОМС</string>
+  <string id="docString">Альтернативный код — заменяет ID в штрихкоде/QR (напр. № страховки, № участника, ссылка на профиль)</string>
+  <string id="docLabel">Метка кода (напр. Номер, Страховка)</string>
+  <string id="barcodeTooLongQr">Код слишком длинный для QR</string>
+
+  <string id="bloodTypeLabel">ГРУППА КРОВИ:</string>
+  <string id="dateOfBirthLabel">ДАТА РОЖДЕНИЯ:</string>
+  <string id="donorStatusLabel">ДОНОР ОРГАНОВ:</string>
+  <string id="nationalIdLabel">СНИЛС:</string>
+  <string id="contactsLabel">ЭКСТРЕННЫЙ КОНТАКТ:</string>
+  <string id="medicationsLabel">ПРЕПАРАТЫ:</string>
+  <string id="allergiesLabel">АЛЛЕРГИИ:</string>
+  <string id="conditionsLabel">ЗАБОЛЕВАНИЯ:</string>
+  <string id="noData">Данные не настроены</string>
+  <string id="openConnectMobile">Откройте Garmin Connect Mobile</string>
+  <string id="setupProfileHint">чтобы настроить профиль.</string>
+  <string id="minimumFieldsHint">Начните с имени и группы крови</string>
+
+  <string id="docType">Формат штрихкода</string>
+  <string id="docTypeNone">Нет / Только текст</string>
+  <string id="docTypeQR">Медицинская страховка / Цифровой Здоровье-QR</string>
+  <string id="docTypeGeneric">Code 39 (только короткие коды)</string>
+  <string id="barcodeTooLong">Слишком длинный - используйте QR</string>
+  <string id="appInfoLabel">О приложении</string>
+</strings>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+  <string id="appName">Medical ID Wallet</string>
+
+  <!-- Settings labels (Garmin Connect Mobile) -->
+  <string id="firstName">First Name</string>
+  <string id="lastName">Last Name</string>
+  <string id="bloodType">Blood Type</string>
+  <string id="bloodNotSet">Not set</string>
+  <string id="notFilled">Not filled in</string>
+  <string id="iceContact1">Emergency Contact 1</string>
+  <string id="iceContact2">Emergency Contact 2</string>
+  <string id="iceContact1Name">Contact 1 Name</string>
+  <string id="iceContact1Rel">Contact 1 Relationship</string>
+  <string id="iceContact2Name">Contact 2 Name</string>
+  <string id="iceContact2Rel">Contact 2 Relationship</string>
+  <string id="height">Height</string>
+  <string id="weight">Weight</string>
+  <string id="unitSystem">Unit System</string>
+  <string id="unitMetric">Metric (cm, kg)</string>
+  <string id="unitImperial">Imperial (in, lb)</string>
+  <string id="medications">Medications</string>
+  <string id="allergies">Allergies</string>
+  <string id="conditions">Medical Conditions</string>
+  <string id="dateOfBirth">Date of Birth (YYYY-MM-DD)</string>
+  <string id="ageLabel">AGE:</string>
+  <string id="donorStatus">Organ Donor</string>
+  <string id="donorNotSpecified">Not specified</string>
+  <string id="donorYes">Yes</string>
+  <string id="donorNo">No</string>
+  <string id="nationalId">National / Health ID (CF, NHS, SSN…)</string>
+  <string id="docString">Alternate Code — overrides National ID in barcode/QR (e.g. insurance #, race #, profile URL)</string>
+  <string id="docLabel">Code Label (e.g. Race #, Insurance)</string>
+  <string id="barcodeTooLongQr">Code too long for QR</string>
+
+  <!-- On-watch display labels -->
+  <string id="bloodTypeLabel">BLOOD TYPE:</string>
+  <string id="dateOfBirthLabel">DATE OF BIRTH:</string>
+  <string id="donorStatusLabel">ORGAN DONOR:</string>
+  <string id="nationalIdLabel">NATIONAL ID:</string>
+  <string id="contactsLabel">EMERGENCY CONTACTS:</string>
+  <string id="medicationsLabel">MEDICATIONS:</string>
+  <string id="allergiesLabel">ALLERGIES:</string>
+  <string id="conditionsLabel">CONDITIONS:</string>
+  <string id="noData">No medical data configured</string>
+  <string id="openConnectMobile">Open Garmin Connect Mobile</string>
+  <string id="setupProfileHint">to set up your profile.</string>
+  <string id="minimumFieldsHint">Start with Name + Blood Type</string>
+
+  <!-- Barcode format options -->
+  <string id="docType">Barcode Format</string>
+  <string id="docTypeNone">None / Text Only</string>
+  <string id="docTypeQR">Medical Insurance / Digital Health QR</string>
+  <string id="docTypeGeneric">Code 39 (short codes only)</string>
+  <string id="barcodeTooLong">Too long for bars - use QR</string>
+  <string id="appInfoLabel">About</string>
+</strings>

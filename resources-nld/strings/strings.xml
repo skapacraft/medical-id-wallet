@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+  <string id="appName">Medical ID Wallet</string>
+
+  <string id="firstName">Voornaam</string>
+  <string id="lastName">Achternaam</string>
+  <string id="bloodType">Bloedgroep</string>
+  <string id="bloodNotSet">Niet ingesteld</string>
+  <string id="notFilled">Niet ingevuld</string>
+  <string id="iceContact1">Noodcontact 1</string>
+  <string id="iceContact2">Noodcontact 2</string>
+  <string id="iceContact1Name">Contact 1 naam</string>
+  <string id="iceContact1Rel">Contact 1 relatie</string>
+  <string id="iceContact2Name">Contact 2 naam</string>
+  <string id="iceContact2Rel">Contact 2 relatie</string>
+  <string id="height">Lengte</string>
+  <string id="weight">Gewicht</string>
+  <string id="unitSystem">Maateenheid</string>
+  <string id="unitMetric">Metrisch (cm, kg)</string>
+  <string id="unitImperial">Imperiaal (in, lb)</string>
+  <string id="medications">Medicijnen</string>
+  <string id="allergies">Allergieën</string>
+  <string id="conditions">Aandoeningen</string>
+  <string id="dateOfBirth">Geboortedatum (YYYY-MM-DD)</string>
+  <string id="ageLabel">LEEFTIJD:</string>
+  <string id="donorStatus">Orgaandonor</string>
+  <string id="donorNotSpecified">Niet opgegeven</string>
+  <string id="donorYes">Ja</string>
+  <string id="donorNo">Nee</string>
+  <string id="nationalId">BSN / Zorgpas Nr.</string>
+  <string id="docString">Alternatieve code — vervangt ID in barcode/QR (bijv. verzekeringsnr., startnr., profiel-URL)</string>
+  <string id="docLabel">Codelabel (bijv. Startnr., Verzekering)</string>
+  <string id="barcodeTooLongQr">Code te lang voor QR</string>
+
+  <string id="bloodTypeLabel">BLOEDGROEP:</string>
+  <string id="dateOfBirthLabel">GEBOORTEDATUM:</string>
+  <string id="donorStatusLabel">ORGAANDONOR:</string>
+  <string id="nationalIdLabel">BSN:</string>
+  <string id="contactsLabel">NOODCONTACTEN:</string>
+  <string id="medicationsLabel">MEDICIJNEN:</string>
+  <string id="allergiesLabel">ALLERGIEËN:</string>
+  <string id="conditionsLabel">AANDOENINGEN:</string>
+  <string id="noData">Geen gegevens geconfigureerd</string>
+  <string id="openConnectMobile">Open Garmin Connect Mobile</string>
+  <string id="setupProfileHint">om je profiel in te stellen.</string>
+  <string id="minimumFieldsHint">Begin met Naam + Bloedgroep</string>
+
+  <string id="docType">Barcodeformaat</string>
+  <string id="docTypeNone">Geen / Alleen Tekst</string>
+  <string id="docTypeQR">Ziektekostenverzekering / Digitale Gezondheids-QR</string>
+  <string id="docTypeGeneric">Code 39 (alleen korte codes)</string>
+  <string id="barcodeTooLong">Te lang voor streepjes - QR</string>
+  <string id="appInfoLabel">Over de app</string>
+</strings>

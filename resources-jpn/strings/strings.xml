@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+  <string id="appName">Medical ID Wallet</string>
+
+  <string id="firstName">名（名前）</string>
+  <string id="lastName">姓（苗字）</string>
+  <string id="bloodType">血液型</string>
+  <string id="bloodNotSet">未設定</string>
+  <string id="notFilled">未入力</string>
+  <string id="iceContact1">緊急連絡先 1</string>
+  <string id="iceContact2">緊急連絡先 2</string>
+  <string id="iceContact1Name">緊急連絡先1 氏名</string>
+  <string id="iceContact1Rel">緊急連絡先1 続柄</string>
+  <string id="iceContact2Name">緊急連絡先2 氏名</string>
+  <string id="iceContact2Rel">緊急連絡先2 続柄</string>
+  <string id="height">身長</string>
+  <string id="weight">体重</string>
+  <string id="unitSystem">単位系</string>
+  <string id="unitMetric">メートル法 (cm, kg)</string>
+  <string id="unitImperial">ヤードポンド法 (in, lb)</string>
+  <string id="medications">服薬</string>
+  <string id="allergies">アレルギー</string>
+  <string id="conditions">既往症</string>
+  <string id="dateOfBirth">生年月日 (YYYY-MM-DD)</string>
+  <string id="ageLabel">年齢:</string>
+  <string id="donorStatus">臓器提供者</string>
+  <string id="donorNotSpecified">指定されていない</string>
+  <string id="donorYes">はい</string>
+  <string id="donorNo">いいえ</string>
+  <string id="nationalId">マイナンバー / 保険証番号</string>
+  <string id="docString">代替コード — バーコード/QRのIDを上書き（例：保険番号、ゼッケン番号、プロフィールURL）</string>
+  <string id="docLabel">コードのラベル（例: ゼッケン番号、保険）</string>
+  <string id="barcodeTooLongQr">QRには長すぎるコードです</string>
+
+  <string id="bloodTypeLabel">血液型:</string>
+  <string id="dateOfBirthLabel">生年月日:</string>
+  <string id="donorStatusLabel">臓器提供者:</string>
+  <string id="nationalIdLabel">マイナンバー:</string>
+  <string id="contactsLabel">緊急連絡先:</string>
+  <string id="medicationsLabel">服薬:</string>
+  <string id="allergiesLabel">アレルギー:</string>
+  <string id="conditionsLabel">既往症:</string>
+  <string id="noData">データが設定されていません</string>
+  <string id="openConnectMobile">Garmin Connect Mobileを開いて</string>
+  <string id="setupProfileHint">プロフィールを設定してください。</string>
+  <string id="minimumFieldsHint">まず氏名と血液型から始めましょう</string>
+
+  <string id="docType">バーコード形式</string>
+  <string id="docTypeNone">なし / テキストのみ</string>
+  <string id="docTypeQR">医療保険 / デジタルヘルス QR</string>
+  <string id="docTypeGeneric">Code 39（短いコードのみ）</string>
+  <string id="barcodeTooLong">バーには長すぎます - QRを使用</string>
+  <string id="appInfoLabel">アプリについて</string>
+</strings>

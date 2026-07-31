@@ -1,0 +1,163 @@
+<resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+
+    <properties>
+        <property id="firstName"   type="string"></property>
+        <property id="lastName"    type="string"></property>
+        <property id="bloodType"   type="number">0</property>
+        <property id="iceContact1"     type="string"></property>
+        <property id="iceContact1Name" type="string"></property>
+        <property id="iceContact1Rel"  type="string"></property>
+        <property id="iceContact2"     type="string"></property>
+        <property id="iceContact2Name" type="string"></property>
+        <property id="iceContact2Rel"  type="string"></property>
+        <property id="unitSystem"  type="number">0</property>
+        <property id="height"         type="float">0.0</property>
+        <property id="weight"         type="float">0.0</property>
+        <property id="dateOfBirth"    type="string"></property>
+        <property id="donorStatus"    type="number">0</property>
+        <property id="medications" type="string"></property>
+        <property id="allergies"   type="string"></property>
+        <property id="conditions"  type="string"></property>
+        <property id="nationalId"  type="string"></property>
+        <property id="docString"   type="string"></property>
+        <property id="docLabel"    type="string"></property>
+        <property id="docType"     type="number">0</property>
+        <property id="appInfo"     type="string">v1.1.0 · SkapaCraft · skapacraft.com</property>
+    </properties>
+
+    <settings>
+        <setting propertyKey="@Properties.firstName" title="@Strings.firstName" prompt="@Strings.notFilled">
+            <settingConfig type="alphaNumeric" maxLength="255" />
+        </setting>
+
+        <setting propertyKey="@Properties.lastName" title="@Strings.lastName" prompt="@Strings.notFilled">
+            <settingConfig type="alphaNumeric" maxLength="255" />
+        </setting>
+
+        <!-- 0 = not set, 1..8 = A+ .. O- -->
+        <setting propertyKey="@Properties.bloodType" title="@Strings.bloodType">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.bloodNotSet</listEntry>
+                <listEntry value="1">A+</listEntry>
+                <listEntry value="2">A-</listEntry>
+                <listEntry value="3">B+</listEntry>
+                <listEntry value="4">B-</listEntry>
+                <listEntry value="5">AB+</listEntry>
+                <listEntry value="6">AB-</listEntry>
+                <listEntry value="7">O+</listEntry>
+                <listEntry value="8">O-</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.iceContact1Name" title="@Strings.iceContact1Name" prompt="@Strings.notFilled">
+            <settingConfig type="alphaNumeric" maxLength="60" />
+        </setting>
+
+        <setting propertyKey="@Properties.iceContact1Rel" title="@Strings.iceContact1Rel" prompt="@Strings.notFilled">
+            <settingConfig type="alphaNumeric" maxLength="30" />
+        </setting>
+
+        <setting propertyKey="@Properties.iceContact1" title="@Strings.iceContact1" prompt="@Strings.notFilled">
+            <settingConfig type="phone" maxLength="255" />
+        </setting>
+
+        <setting propertyKey="@Properties.iceContact2Name" title="@Strings.iceContact2Name" prompt="@Strings.notFilled">
+            <settingConfig type="alphaNumeric" maxLength="60" />
+        </setting>
+
+        <setting propertyKey="@Properties.iceContact2Rel" title="@Strings.iceContact2Rel" prompt="@Strings.notFilled">
+            <settingConfig type="alphaNumeric" maxLength="30" />
+        </setting>
+
+        <setting propertyKey="@Properties.iceContact2" title="@Strings.iceContact2" prompt="@Strings.notFilled">
+            <settingConfig type="phone" maxLength="255" />
+        </setting>
+
+        <!-- 0 = Metric (cm/kg), 1 = Imperial (in/lb). Chosen explicitly here
+             since the phone-side settings page cannot read the watch's own
+             unit setting at render time. -->
+        <setting propertyKey="@Properties.unitSystem" title="@Strings.unitSystem">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.unitMetric</listEntry>
+                <listEntry value="1">@Strings.unitImperial</listEntry>
+            </settingConfig>
+        </setting>
+
+        <!-- Numeric picker instead of free text — unit (cm/in, kg/lb) is
+             applied automatically on-watch based on the unitSystem selection
+             above. Range covers both unit systems since the settings
+             framework has no way to swap min/max based on another field. -->
+        <setting propertyKey="@Properties.height" title="@Strings.height" prompt="@Strings.notFilled">
+            <settingConfig type="numeric" min="20" max="250" />
+        </setting>
+
+        <setting propertyKey="@Properties.weight" title="@Strings.weight" prompt="@Strings.notFilled">
+            <settingConfig type="numeric" min="1" max="600" />
+        </setting>
+
+        <setting propertyKey="@Properties.medications" title="@Strings.medications" prompt="@Strings.notFilled">
+            <settingConfig type="alphaNumeric" maxLength="512" />
+        </setting>
+
+        <setting propertyKey="@Properties.allergies" title="@Strings.allergies" prompt="@Strings.notFilled">
+            <settingConfig type="alphaNumeric" maxLength="512" />
+        </setting>
+
+        <setting propertyKey="@Properties.conditions" title="@Strings.conditions" prompt="@Strings.notFilled">
+            <settingConfig type="alphaNumeric" maxLength="512" />
+        </setting>
+
+        <!-- Date of birth (YYYY-MM-DD) — used by medical responders for age-based dosing -->
+        <setting propertyKey="@Properties.dateOfBirth" title="@Strings.dateOfBirth" prompt="@Strings.notFilled">
+            <settingConfig type="alphaNumeric" maxLength="10" />
+        </setting>
+
+        <!-- Organ donor status: 0 = not specified, 1 = yes, 2 = no -->
+        <setting propertyKey="@Properties.donorStatus" title="@Strings.donorStatus">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.donorNotSpecified</listEntry>
+                <listEntry value="1">@Strings.donorYes</listEntry>
+                <listEntry value="2">@Strings.donorNo</listEntry>
+            </settingConfig>
+        </setting>
+
+        <!-- National / Health ID: CF (IT), NHS (UK), SSN/State ID (US), BSN (NL), etc.
+             Used as Code39 barcode source on the document screen. -->
+        <setting propertyKey="@Properties.nationalId" title="@Strings.nationalId" prompt="@Strings.notFilled">
+            <settingConfig type="alphaNumeric" maxLength="32" />
+        </setting>
+
+        <!-- Optional barcode override — takes priority over nationalId
+             whenever it's set (falls back to nationalId only if empty) -->
+        <setting propertyKey="@Properties.docString" title="@Strings.docString" prompt="@Strings.notFilled">
+            <settingConfig type="alphaNumeric" maxLength="255" />
+        </setting>
+
+        <!-- Optional caption drawn just above the barcode/QR panel. Without
+             it the panel is an unlabelled code: nothing tells a responder (or
+             the wearer) whether it is a race bib, an insurance number or a
+             link to an online health profile. -->
+        <setting propertyKey="@Properties.docLabel" title="@Strings.docLabel" prompt="@Strings.notFilled">
+            <settingConfig type="alphaNumeric" maxLength="30" />
+        </setting>
+
+        <!-- Barcode format selector: 0=none, 1=QR, 2=Code39 (generic).
+             Code128/PDF417 dropped — low real-world usefulness without a
+             proper scanner, and neither matched the actual standard needed
+             to interoperate with real hospital/DMV scanning systems. -->
+        <setting propertyKey="@Properties.docType" title="@Strings.docType">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.docTypeNone</listEntry>
+                <listEntry value="1">@Strings.docTypeQR</listEntry>
+                <listEntry value="2">@Strings.docTypeGeneric</listEntry>
+            </settingConfig>
+        </setting>
+
+        <!-- Read-only "About" footer: app version, author, website. Keep the
+             version portion in sync with manifest.xml's version whenever
+             either is bumped. -->
+        <setting propertyKey="@Properties.appInfo" title="@Strings.appInfoLabel">
+            <settingConfig type="alphaNumeric" maxLength="255" readonly="true" />
+        </setting>
+    </settings>
+</resources>

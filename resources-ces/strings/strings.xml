@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+  <string id="appName">Medical ID Wallet</string>
+
+  <string id="firstName">Jméno</string>
+  <string id="lastName">Příjmení</string>
+  <string id="bloodType">Krevní skupina</string>
+  <string id="bloodNotSet">Nenastaveno</string>
+  <string id="notFilled">Nevyplněno</string>
+  <string id="iceContact1">Nouzový kontakt 1</string>
+  <string id="iceContact2">Nouzový kontakt 2</string>
+  <string id="iceContact1Name">Jméno kontaktu 1</string>
+  <string id="iceContact1Rel">Vztah ke kontaktu 1</string>
+  <string id="iceContact2Name">Jméno kontaktu 2</string>
+  <string id="iceContact2Rel">Vztah ke kontaktu 2</string>
+  <string id="height">Výška</string>
+  <string id="weight">Váha</string>
+  <string id="unitSystem">Jednotky</string>
+  <string id="unitMetric">Metrické (cm, kg)</string>
+  <string id="unitImperial">Imperiální (in, lb)</string>
+  <string id="medications">Léky</string>
+  <string id="allergies">Alergie</string>
+  <string id="conditions">Diagnózy</string>
+  <string id="dateOfBirth">Datum narození (RRRR-MM-DD)</string>
+  <string id="ageLabel">VĚK:</string>
+  <string id="donorStatus">Dárce orgánů</string>
+  <string id="donorNotSpecified">Neuvedeno</string>
+  <string id="donorYes">Ano</string>
+  <string id="donorNo">Ne</string>
+  <string id="nationalId">Rodné číslo / Průkaz pojištěnce</string>
+  <string id="docString">Alternativní kód — nahrazuje ID v čárovém kódu/QR (např. č. pojištění, č. závodu, URL profilu)</string>
+  <string id="docLabel">Popisek kódu (např. Startovní č., Pojištění)</string>
+  <string id="barcodeTooLongQr">Kód je příliš dlouhý pro QR</string>
+
+  <string id="bloodTypeLabel">KREVNÍ SKUPINA:</string>
+  <string id="dateOfBirthLabel">DATUM NAROZENÍ:</string>
+  <string id="donorStatusLabel">DÁRCE ORGÁNŮ:</string>
+  <string id="nationalIdLabel">RODNÉ ČÍSLO:</string>
+  <string id="contactsLabel">NOUZOVÝ KONTAKT:</string>
+  <string id="medicationsLabel">LÉKY:</string>
+  <string id="allergiesLabel">ALERGIE:</string>
+  <string id="conditionsLabel">DIAGNÓZY:</string>
+  <string id="noData">Žádná data nejsou nakonfigurována</string>
+  <string id="openConnectMobile">Otevřete Garmin Connect Mobile</string>
+  <string id="setupProfileHint">a nastavte si profil.</string>
+  <string id="minimumFieldsHint">Začněte se jménem a krevní skupinou</string>
+
+  <string id="docType">Formát čárového kódu</string>
+  <string id="docTypeNone">Žádný / Pouze text</string>
+  <string id="docTypeQR">Zdravotní pojištění / Digitální Zdravotní QR</string>
+  <string id="docTypeGeneric">Code 39 (pouze krátké kódy)</string>
+  <string id="barcodeTooLong">Příliš dlouhé pro čárky - použijte QR</string>
+  <string id="appInfoLabel">O aplikaci</string>
+</strings>

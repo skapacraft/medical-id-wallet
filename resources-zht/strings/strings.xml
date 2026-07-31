@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+  <string id="appName">Medical ID Wallet</string>
+
+  <string id="firstName">名字</string>
+  <string id="lastName">姓</string>
+  <string id="bloodType">血型</string>
+  <string id="bloodNotSet">未設定</string>
+  <string id="notFilled">未填寫</string>
+  <string id="iceContact1">緊急聯絡人 1</string>
+  <string id="iceContact2">緊急聯絡人 2</string>
+  <string id="iceContact1Name">緊急聯絡人1姓名</string>
+  <string id="iceContact1Rel">緊急聯絡人1關係</string>
+  <string id="iceContact2Name">緊急聯絡人2姓名</string>
+  <string id="iceContact2Rel">緊急聯絡人2關係</string>
+  <string id="height">身高</string>
+  <string id="weight">體重</string>
+  <string id="unitSystem">單位制</string>
+  <string id="unitMetric">公制 (cm, kg)</string>
+  <string id="unitImperial">英制 (in, lb)</string>
+  <string id="medications">用藥</string>
+  <string id="allergies">過敏</string>
+  <string id="conditions">病史</string>
+  <string id="dateOfBirth">出生日期 (YYYY-MM-DD)</string>
+  <string id="ageLabel">年齡:</string>
+  <string id="donorStatus">器官捐獻者</string>
+  <string id="donorNotSpecified">未指定</string>
+  <string id="donorYes">是</string>
+  <string id="donorNo">否</string>
+  <string id="nationalId">身分證 / 健保卡號</string>
+  <string id="docString">備用代碼 — 在條形碼/QR碼中替代身份證號（例如：保險號、參賽號、個人檔案連結）</string>
+  <string id="docLabel">代碼標籤（例如：號碼布、保險）</string>
+  <string id="barcodeTooLongQr">代碼過長，無法產生 QR</string>
+
+  <string id="bloodTypeLabel">血型:</string>
+  <string id="dateOfBirthLabel">出生日期:</string>
+  <string id="donorStatusLabel">器官捐獻者:</string>
+  <string id="nationalIdLabel">證件號碼:</string>
+  <string id="contactsLabel">緊急聯絡人:</string>
+  <string id="medicationsLabel">用藥:</string>
+  <string id="allergiesLabel">過敏:</string>
+  <string id="conditionsLabel">病史:</string>
+  <string id="noData">未設定資料</string>
+  <string id="openConnectMobile">開啟 Garmin Connect Mobile</string>
+  <string id="setupProfileHint">設定你的資料。</string>
+  <string id="minimumFieldsHint">從姓名和血型開始</string>
+
+  <string id="docType">條形碼格式</string>
+  <string id="docTypeNone">無 / 僅文字</string>
+  <string id="docTypeQR">醫療保險 / 數位健康 QR</string>
+  <string id="docTypeGeneric">Code 39（僅限短代碼）</string>
+  <string id="barcodeTooLong">過長無法產生條碼 - 請用 QR</string>
+  <string id="appInfoLabel">關於</string>
+</strings>

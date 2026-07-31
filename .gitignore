@@ -1,0 +1,28 @@
+# Build output
+bin/
+build/
+*.prg
+*.prg.debug.xml
+.gradle/
+
+# Signing keys — never commit
+*.pem
+*.key
+*.p12
+*.der
+
+# IDE
+.idea/
+.vscode/
+.DS_Store
+*.swp
+*~
+
+# Internal working docs — not for the public repo
+.claude/
+TEST_MATRIX.md
+new_icon_source.png
+
+# Logs
+*.log
+debug.log
