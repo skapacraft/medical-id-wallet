@@ -50,5 +50,6 @@
   <string id="docTypeQR">Sairausvakuutus / Digitaalinen Terveys-QR</string>
   <string id="docTypeGeneric">Code 39 (vain lyhyet koodit)</string>
   <string id="barcodeTooLong">Liian pitkä viivoille - käytä QR</string>
+  <string id="pressStart">Paina START</string>
   <string id="appInfoLabel">Tietoja sovelluksesta</string>
 </strings>

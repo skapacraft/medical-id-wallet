@@ -50,5 +50,6 @@
   <string id="docTypeQR">Ziektekostenverzekering / Digitale Gezondheids-QR</string>
   <string id="docTypeGeneric">Code 39 (alleen korte codes)</string>
   <string id="barcodeTooLong">Te lang voor streepjes - QR</string>
+  <string id="pressStart">Druk op START</string>
   <string id="appInfoLabel">Over de app</string>
 </strings>

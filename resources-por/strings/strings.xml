@@ -50,5 +50,6 @@
   <string id="docTypeQR">Seguro Saúde / QR Saúde Digital</string>
   <string id="docTypeGeneric">Code 39 (apenas códigos curtos)</string>
   <string id="barcodeTooLong">Muito longo para barras - use QR</string>
+  <string id="pressStart">Pressione START</string>
   <string id="appInfoLabel">Sobre o aplicativo</string>
 </strings>

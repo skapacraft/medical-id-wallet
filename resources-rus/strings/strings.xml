@@ -50,5 +50,6 @@
   <string id="docTypeQR">Медицинская страховка / Цифровой Здоровье-QR</string>
   <string id="docTypeGeneric">Code 39 (только короткие коды)</string>
   <string id="barcodeTooLong">Слишком длинный - используйте QR</string>
+  <string id="pressStart">Нажмите START</string>
   <string id="appInfoLabel">О приложении</string>
 </strings>

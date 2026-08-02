@@ -50,5 +50,6 @@
   <string id="docTypeQR">医疗保险 / 数字健康 QR</string>
   <string id="docTypeGeneric">Code 39（仅限短代码）</string>
   <string id="barcodeTooLong">过长无法生成条码 - 请用二维码</string>
+  <string id="pressStart">按 START</string>
   <string id="appInfoLabel">关于</string>
 </strings>

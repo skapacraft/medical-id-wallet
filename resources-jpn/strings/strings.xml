@@ -50,5 +50,6 @@
   <string id="docTypeQR">医療保険 / デジタルヘルス QR</string>
   <string id="docTypeGeneric">Code 39（短いコードのみ）</string>
   <string id="barcodeTooLong">バーには長すぎます - QRを使用</string>
+  <string id="pressStart">STARTを押す</string>
   <string id="appInfoLabel">アプリについて</string>
 </strings>

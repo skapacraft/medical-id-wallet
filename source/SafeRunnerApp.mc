@@ -8,6 +8,7 @@
 import Toybox.Application;
 import Toybox.WatchUi;
 import Toybox.Lang;
+import Toybox.System;
 
 //! SafeRunner ICE Wallet main application class.
 //! Annotated (:glance) so the app can run in the glance carousel on modern
@@ -29,9 +30,24 @@ class SafeRunnerApp extends Application.AppBase {
         return model as SafeRunnerModel;
     }
 
+    //! On a glance-capable device the widget is launched from the glance
+    //! list, and the SDK states the base view then "don't have the input
+    //! restrictions regularly applied" — so scrolling works immediately and
+    //! the initial view is the interactive one. Where glances don't exist
+    //! (fr235 and other pre-3.1.0 devices) the widget sits in the carousel,
+    //! up/down belong to the system, and the initial view must act as a base
+    //! view that pushes the scrollable view on SELECT instead.
     function getInitialView() as [Views] or [Views, InputDelegates] {
         var m = getModel();
-        return [new SafeRunnerView(m), new SafeRunnerDelegate(m)];
+        var restricted = isBaseViewInputRestricted();
+        return [new SafeRunnerView(m, restricted), new SafeRunnerDelegate(m, restricted)];
+    }
+
+    private function isBaseViewInputRestricted() as Boolean {
+        var settings = System.getDeviceSettings();
+        if (!(settings has :isGlanceModeEnabled)) { return true; }
+        var enabled = settings.isGlanceModeEnabled;
+        return !(enabled == true);
     }
 
     //! The glance builds nothing beyond its own view — it reads the single

@@ -50,5 +50,6 @@
   <string id="docTypeQR">Assicurazione Medica / QR Sanitario</string>
   <string id="docTypeGeneric">Code 39 (solo codici brevi)</string>
   <string id="barcodeTooLong">Troppo lungo per le barre - usa QR</string>
+  <string id="pressStart">Premi START</string>
   <string id="appInfoLabel">Informazioni</string>
 </strings>

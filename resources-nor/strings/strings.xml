@@ -50,5 +50,6 @@
   <string id="docTypeQR">Helseforsikring / Digital Helse-QR</string>
   <string id="docTypeGeneric">Code 39 (kun korte koder)</string>
   <string id="barcodeTooLong">For langt for streker - bruk QR</string>
+  <string id="pressStart">Trykk START</string>
   <string id="appInfoLabel">Om appen</string>
 </strings>

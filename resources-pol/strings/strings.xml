@@ -50,5 +50,6 @@
   <string id="docTypeQR">Ubezpieczenie Zdrowotne / QR Zdrowotny</string>
   <string id="docTypeGeneric">Code 39 (tylko krótkie kody)</string>
   <string id="barcodeTooLong">Za długi na kreski - użyj QR</string>
+  <string id="pressStart">Naciśnij START</string>
   <string id="appInfoLabel">O aplikacji</string>
 </strings>

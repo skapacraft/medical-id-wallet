@@ -53,5 +53,6 @@
   <string id="docTypeQR">Medical Insurance / Digital Health QR</string>
   <string id="docTypeGeneric">Code 39 (short codes only)</string>
   <string id="barcodeTooLong">Too long for bars - use QR</string>
+  <string id="pressStart">Press START</string>
   <string id="appInfoLabel">About</string>
 </strings>

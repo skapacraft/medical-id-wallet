@@ -50,5 +50,6 @@
   <string id="docTypeQR">의료보험 / 디지털 건강 QR</string>
   <string id="docTypeGeneric">Code 39 (짧은 코드만)</string>
   <string id="barcodeTooLong">바코드에 너무 김 - QR 사용</string>
+  <string id="pressStart">START 누르기</string>
   <string id="appInfoLabel">앱 정보</string>
 </strings>

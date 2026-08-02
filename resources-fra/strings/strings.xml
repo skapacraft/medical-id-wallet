@@ -50,5 +50,6 @@
   <string id="docTypeQR">Assurance Maladie / QR Santé</string>
   <string id="docTypeGeneric">Code 39 (codes courts uniquement)</string>
   <string id="barcodeTooLong">Trop long pour les barres - QR</string>
+  <string id="pressStart">Appuyez sur START</string>
   <string id="appInfoLabel">À propos</string>
 </strings>

@@ -50,5 +50,6 @@
   <string id="docTypeQR">Egészségbiztosítás / Digitális Egészség QR</string>
   <string id="docTypeGeneric">Code 39 (csak rövid kódok)</string>
   <string id="barcodeTooLong">Túl hosszú a vonalakhoz - QR</string>
+  <string id="pressStart">Nyomja meg: START</string>
   <string id="appInfoLabel">Az alkalmazásról</string>
 </strings>

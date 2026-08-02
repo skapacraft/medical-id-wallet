@@ -110,8 +110,17 @@ class SafeRunnerModel {
         purgeLegacyStorage();
     }
 
+    //! Application.Properties requires API Level 2.4.0. Devices stuck below
+    //! that (e.g. fr235, capped at 1.4.5) don't have the module at all, and
+    //! calling it isn't a catchable Lang.Exception there: it's a symbol
+    //! resolution failure that crashes the app outright, bypassing the
+    //! try/catch entirely. Fall back to the older AppBase.getProperty(),
+    //! which every API level supports.
     private function getProp(key as String) as Object? {
-        try { return Application.Properties.getValue(key); } catch (ex) { return null; }
+        if (Toybox.Application has :Properties) {
+            try { return Application.Properties.getValue(key); } catch (ex) { return null; }
+        }
+        try { return Application.getApp().getProperty(key); } catch (ex) { return null; }
     }
 
     //! Security fix: earlier versions mirrored every sensitive field (name,
@@ -123,6 +132,10 @@ class SafeRunnerModel {
     //! removes any such copy left behind by a prior install; no new code
     //! path writes to Storage going forward.
     private function purgeLegacyStorage() as Void {
+        // Application.Storage also requires API Level 2.4.0 and doesn't
+        // exist below it. Devices that old never had the mirrored copy
+        // this purges in the first place, so there's nothing to do.
+        if (!(Toybox.Application has :Storage)) { return; }
         var legacyKeys = [
             PROP_FIRST_NAME, PROP_LAST_NAME, PROP_BLOOD_TYPE, PROP_ICE_CONTACT1,
             PROP_ICE_CONTACT2, PROP_HEIGHT, PROP_WEIGHT, PROP_MEDICATIONS,

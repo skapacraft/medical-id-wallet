@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <iq:manifest xmlns:iq="http://www.garmin.com/xml/connectiq" version="3">
-    <iq:application name="@Strings.appName" entry="SafeRunnerApp" id="1c60266352da41c6b7388a5051d42aea" type="widget" launcherIcon="@Drawables.LauncherIcon" version="1.0.2">
+    <iq:application name="@Strings.appName" entry="SafeRunnerApp" id="1c60266352da41c6b7388a5051d42aea" type="widget" launcherIcon="@Drawables.LauncherIcon" version="1.0.3">
         <iq:products>
             <iq:product id="approachs50"/>
             <iq:product id="approachs60"/>

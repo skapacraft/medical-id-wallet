@@ -13,12 +13,36 @@ import Toybox.Lang;
 //! UP   / SWIPE_DOWN → scroll up
 //! MENU             → reset to top
 //! ESC/BACK         → not intercepted; system closes the widget
-class SafeRunnerDelegate extends WatchUi.InputDelegate {
-    private var model as SafeRunnerModel;
+//!
+//! BehaviorDelegate rather than InputDelegate so onSelect() is available:
+//! on a widget's base view the system reserves up/down for the widget
+//! carousel and the delegate "will never receive either the up/down button
+//! or up/down swipe events" (SDK, Connect IQ Basics > App Types). On devices
+//! without glances (e.g. fr235) that made pressing DOWN page away to the
+//! next widget instead of scrolling — the app appeared to quit. Views pushed
+//! with WatchUi.pushView() carry no such restriction, so the base view hands
+//! off to a pushed copy of itself on SELECT.
+class SafeRunnerDelegate extends WatchUi.BehaviorDelegate {
+    private var model      as SafeRunnerModel;
+    //! True only for the delegate attached to the widget's base view, where
+    //! up/down are owned by the system and SELECT must push the real view.
+    private var isBaseView as Boolean;
 
-    function initialize(model as SafeRunnerModel) {
-        InputDelegate.initialize();
+    function initialize(model as SafeRunnerModel, isBaseView as Boolean) {
+        BehaviorDelegate.initialize();
         self.model = model;
+        self.isBaseView = isBaseView;
+    }
+
+    //! START/ENTER on the base view opens the scrollable view. Returning
+    //! false elsewhere leaves the system default behavior untouched.
+    function onSelect() as Boolean {
+        if (!isBaseView) { return false; }
+        model.setScrollOffset(0);
+        WatchUi.pushView(new SafeRunnerView(model, false),
+                         new SafeRunnerDelegate(model, false),
+                         WatchUi.SLIDE_LEFT);
+        return true;
     }
 
     function onKey(keyEvent as KeyEvent) as Boolean {
@@ -40,7 +64,8 @@ class SafeRunnerDelegate extends WatchUi.InputDelegate {
             return true;
         }
         // KEY_ESC intentionally not handled here — returning false lets
-        // WatchUi apply its default behavior (close the widget).
+        // WatchUi apply its default behavior (close the widget, or pop the
+        // pushed view back to the base view).
 
         return false;
     }
@@ -60,5 +85,11 @@ class SafeRunnerDelegate extends WatchUi.InputDelegate {
         }
 
         return false;
+    }
+
+    //! Touch devices: tapping the base view opens the scrollable view, the
+    //! same way SELECT does on button devices.
+    function onTap(clickEvent as ClickEvent) as Boolean {
+        return onSelect();
     }
 }

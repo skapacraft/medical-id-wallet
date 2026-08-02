@@ -20,9 +20,16 @@ class SafeRunnerView extends WatchUi.View {
     private const COLOR_RED_NEON = 0xFF0000;
     private const COLOR_GREY     = 0xAAAAAA;
 
-    function initialize(model as SafeRunnerModel) {
+    //! Set on the base view of a widget whose up/down buttons belong to the
+    //! carousel: without a cue, that screen looks like the whole app and the
+    //! rest of the profile is unreachable. "START" is the physical button
+    //! label on Garmin wearables, so it needs no translation.
+    private var showOpenHint as Boolean;
+
+    function initialize(model as SafeRunnerModel, showOpenHint as Boolean) {
         View.initialize();
         self.model = model;
+        self.showOpenHint = showOpenHint;
         barcodeRenderer = new BarcodeRenderer();
     }
 
@@ -60,6 +67,35 @@ class SafeRunnerView extends WatchUi.View {
         if (backlightOn) {
             setBacklight(true);
         }
+        if (showOpenHint && model.hasData()) {
+            drawOpenHint(dc);
+        }
+    }
+
+    //! Bottom-of-screen cue drawn over the content, telling the wearer the
+    //! profile continues behind a button press. Drawn last so scrolled
+    //! content cannot paint over it.
+    private function drawOpenHint(dc as Dc) as Void {
+        var w = dc.getWidth();
+        var h = dc.getHeight();
+        var hintH = dc.getFontHeight(Graphics.FONT_XTINY);
+        // Band is taller than the label so a content line ending just above
+        // it is covered outright rather than left half-drawn.
+        var bandY = h - hintH - 12;
+        dc.setColor(COLOR_BLACK, COLOR_BLACK);
+        dc.fillRectangle(0, bandY, w, h - bandY);
+
+        // "START" is printed on the hardware, so it stays untranslated; the
+        // verb around it is localized. Longer languages (hu, fr) can outrun
+        // a narrow round screen, so fall back to the bare button name rather
+        // than let the cue run under the bezel.
+        var label = WatchUi.loadResource(Rez.Strings.pressStart) as String;
+        if (dc.getTextWidthInPixels(label, Graphics.FONT_XTINY) > w - 8) {
+            label = "START";
+        }
+        dc.setColor(COLOR_GREY, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(w / 2, bandY + 4, Graphics.FONT_XTINY, label,
+                    Graphics.TEXT_JUSTIFY_CENTER);
     }
 
     // Single scrollable screen: ICE info followed by barcode inline.
@@ -393,7 +429,14 @@ class SafeRunnerView extends WatchUi.View {
         return lines.size();
     }
 
-    function onShow() as Void {}
+    //! The base view and the pushed view share one model, so the scroll
+    //! position the pushed view was left at would otherwise still be applied
+    //! when the user backs out to the base view — which then shows the
+    //! middle of the profile behind the "press START" cue instead of the
+    //! summary it is meant to be.
+    function onShow() as Void {
+        if (showOpenHint) { model.setScrollOffset(0); }
+    }
     // No explicit backlight(false) here — Attention.backlight() already
     // respects the device's own timeout, and forcing it off while the view
     // is closing was the source of a black-frame glitch on some devices.
