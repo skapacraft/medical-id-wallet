@@ -22,7 +22,7 @@
         <property id="docString"   type="string"></property>
         <property id="docLabel"    type="string"></property>
         <property id="docType"     type="number">0</property>
-        <property id="appInfo"     type="string">v1.1.0 · SkapaCraft · skapacraft.com</property>
+        <property id="appInfo"     type="string">v1.0.3 · SkapaCraft · skapacraft.com</property>
     </properties>
 
     <settings>

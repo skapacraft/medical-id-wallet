@@ -32,7 +32,9 @@ Open **Garmin Connect Mobile** → your device → **Widget Settings** → Medic
 
 ## Privacy
 
-**100% offline. Zero network requests.** Medical ID Wallet never collects, transmits, or shares any of your information. Everything you enter stays stored locally on your watch and paired phone: nothing is sent to SkapaCraft, Garmin, or any third party.
+**100% offline. Zero network requests.** Medical ID Wallet never collects, transmits, or shares any of your information: nothing is sent to SkapaCraft or any third party, and the app never touches the network.
+
+One honest caveat: you enter these fields in Garmin Connect Mobile, so the values are handled by Garmin's own apps and services on their way to the watch, under [Garmin's privacy policy](https://www.garmin.com/en-US/privacy/global/policy/) rather than ours. We can't see that and don't control it. Every field is optional, so leave blank anything you'd rather Garmin not hold.
 
 **Before selling, gifting, or discarding your watch**, remember to reset it to factory settings (or clear the app's settings in Garmin Connect Mobile) to remove your personal and medical information from the device.
 
